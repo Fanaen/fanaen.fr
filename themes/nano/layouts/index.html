@@ -1,7 +1,9 @@
 {{ define "main" }}
 <div class="vc">
+    <div class="vc-space-above"></div>
     <h1>{{ .Site.Params.author }}</h1>
     <h2>aka {{ .Site.Params.alias }}</h2>
+    <div class="vc-space-below"></div>
 </div>
 {{ .Content }}
 {{ end }}

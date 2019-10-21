@@ -11,15 +11,16 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque finibus imperdi
 
 {{%/verticalchunk%}}
 
-{{% verticalchunk %}}
-# Science
-
-Curabitur porta pulvinar vestibulum. Sed non viverra urna. Donec posuere non lectus et aliquet. Donec vel mauris ac ipsum hendrerit dapibus. Donec et ultrices augue. Fusce ultricies volutpat posuere. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-
-{{% /verticalchunk %}}
 
 {{% verticalchunk %}}
 # Art
 
 Morbi interdum massa ac dolor fermentum pretium. Phasellus ac purus felis. Phasellus id mi mollis orci imperdiet porttitor at non nisi. Nam vel sem justo. Mauris vitae aliquet purus. Aliquam vehicula, nunc id tempor sollicitudin, ipsum lacus varius massa, ac feugiat ipsum elit sed ligula. Aliquam eu nisl viverra, viverra enim id, hendrerit diam. Aenean sodales quis ante sit amet ultrices. Proin rhoncus nunc ac nibh pretium, ut pellentesque risus porta. Maecenas ac finibus mi. Cras viverra lectus scelerisque faucibus tempor. Quisque porta purus non eros facilisis, eget auctor arcu malesuada. Fusce cursus pulvinar lacus vitae aliquet. Ut eleifend mi at tellus ultricies finibus.
+{{% /verticalchunk %}}
+
+{{% verticalchunk %}}
+# Science
+
+Curabitur porta pulvinar vestibulum. Sed non viverra urna. Donec posuere non lectus et aliquet. Donec vel mauris ac ipsum hendrerit dapibus. Donec et ultrices augue. Fusce ultricies volutpat posuere. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+
 {{% /verticalchunk %}}
