@@ -1,0 +1,8 @@
+baseURL = "http://fanaen.fr/"
+languageCode = "en-uk"
+title = "Elouan Poupard-Cosquer"
+theme = "nano"
+
+[params]
+author = "Elouan Poupard-Cosquer"
+alias = "Fanaen"

@@ -1,0 +1,41 @@
+html, body {
+    background: black;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Oxygen', sans-serif;
+}
+
+#back {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.c {
+    background-color: white;
+    min-height: 100%;
+
+    padding: 20px;
+
+    h1, h2, h3, h4, h5, h6 {
+        text-align: center;
+    }
+}
+
+.vc {
+    height: 100vh;
+}
+
+@media (min-width: 1000px) {
+    .c {
+        position: absolute;
+        right: 100px;
+        width: 400px;
+    }
+}
