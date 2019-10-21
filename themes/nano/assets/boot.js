@@ -13,7 +13,7 @@ function autorun()
         script.onload = function () {
             // do stuff with the script
         };
-        script.src = "/anims/vanta-rings/index.min.js";
+        script.src = "/anims/circles-1/index.min.js";
         document.head.appendChild(script);
 
         // -- Download web-fonts --
