@@ -1,7 +1,13 @@
 {{ (resources.Get "anims/common/twgl.min.js").Content | safeJS }}
 
 (function(){
-    console.log('HEY');
+    function w() {
+        return Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+    }
+    function h() {
+        return Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+    }
+
     // Create the shader in DOM (required by TWGL) --
     function createShader(id, content) {
         const shader = document.createElement('script');
@@ -21,11 +27,18 @@
 
     // Get it to full size
     function updateSize() {
-        canvas.width = window.innerWidth;
-        canvas.height = window.innerHeight;
+        canvas.width = w();
+        canvas.height = h();
     }
     window.addEventListener('resize', updateSize, false);
     updateSize();
+
+    // Get the scroll value --
+    let scroll = window.scrollY / h();
+    window.onscroll = function onScroll() {
+        scroll = window.scrollY / h();
+        console.log(window.scrollY);
+    };
 
     // Init Webgl --
     const gl = canvas.getContext('webgl');
@@ -43,6 +56,7 @@
         const uniforms = {
             iTime: time * 0.001,
             iResolution: [gl.canvas.width, gl.canvas.height],
+            iScroll: scroll,
             leftMargin: 500
         };
 
@@ -54,6 +68,4 @@
         requestAnimationFrame(render);
     }
     requestAnimationFrame(render);
-
-    console.log('finished');
 }());

@@ -2,6 +2,7 @@ precision mediump float;
 
 uniform vec2 iResolution;
 uniform float iTime;
+uniform float iScroll;
 
 uniform float leftMargin;
 
@@ -19,7 +20,7 @@ void mainImage( out vec4 fragColor, in vec2 fragCoord )
     vec2 uv = fragCoord/iResolution.xy;
 
     // Time varying pixel color
-    vec3 col = 0.5 + 0.5*cos(iTime+uv.xyx+vec3(0,2,4));
+    vec3 col = 0.5 + 0.5*cos(iScroll+uv.xyx+vec3(0,2,4));
 
     //
     vec3 altCol1 = vec3(0.1);
@@ -41,7 +42,8 @@ void mainImage( out vec4 fragColor, in vec2 fragCoord )
     float isCircle = clamp(d2, 0., 1.);
 
     // Output to screen
-    fragColor = vec4((vec3(cos(iTime)*0.1+0.9, 0., 0.) * (1.- isCircle)) + (circleStrokeColor * (isCircle)),1.0);
+    //red = vec3(cos(iTime)*0.1+0.9
+    fragColor = vec4((col * (1.- isCircle)) + (circleStrokeColor * (isCircle)), 1.0);
 }
 
 void main() {
