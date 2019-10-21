@@ -1,34 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>{{ .Site.Title }}</title>
-    <meta name="author" content="{{ .Site.Params.author }}">
-    <meta name="description" content="{{ .Description }}">
-    <meta name="keywords" content="{{ delimit .Keywords "," }}">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat|Oxygen&display=swap" rel="stylesheet">
-    <script src="js/three.r92.min.js"></script>
-    <script src="js/vanta.rings.min.js"></script>
-    <style>
-        {{ $options := (dict "targetPath" "style.css" "outputStyle" "compressed" "enableSourceMap" false) }}
-        {{ (resources.Get "style.scss" | resources.ToCSS $options).Content | safeCSS }}
-    </style>
-</head>
-<body>
-    <div id="back"></div>
-    <div class="c">
-        <h1>{{ .Site.Params.author }}</h1>
-        <h2>aka {{ .Site.Params.alias }}</h2>
-
-        {{ .Content }}
-    </div>
-    <script type="text/javascript">{{ (resources.Get "boot.js").Content | safeJS }}</script>
-    <script>
-        VANTA.RINGS({
-            el: "#back"
-        })
-    </script>
-</body>
-</html>
+{{ define "main" }}
+<div class="vc">
+    <h1>{{ .Site.Params.author }}</h1>
+    <h2>aka {{ .Site.Params.alias }}</h2>
+</div>
+{{ .Content }}
+{{ end }}

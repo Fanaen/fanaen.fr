@@ -23,9 +23,3 @@ Curabitur porta pulvinar vestibulum. Sed non viverra urna. Donec posuere non lec
 
 Morbi interdum massa ac dolor fermentum pretium. Phasellus ac purus felis. Phasellus id mi mollis orci imperdiet porttitor at non nisi. Nam vel sem justo. Mauris vitae aliquet purus. Aliquam vehicula, nunc id tempor sollicitudin, ipsum lacus varius massa, ac feugiat ipsum elit sed ligula. Aliquam eu nisl viverra, viverra enim id, hendrerit diam. Aenean sodales quis ante sit amet ultrices. Proin rhoncus nunc ac nibh pretium, ut pellentesque risus porta. Maecenas ac finibus mi. Cras viverra lectus scelerisque faucibus tempor. Quisque porta purus non eros facilisis, eget auctor arcu malesuada. Fusce cursus pulvinar lacus vitae aliquet. Ut eleifend mi at tellus ultricies finibus.
 {{% /verticalchunk %}}
-
-{{% verticalchunk %}}
-# Contact
-
-Pellentesque tincidunt malesuada tristique. Quisque pellentesque varius leo, luctus fermentum eros congue nec. Nunc imperdiet mauris sit amet lorem venenatis, id consequat dolor tristique. Ut vitae fringilla lacus. Quisque nec condimentum nunc. Pellentesque neque purus, pharetra in viverra id, dictum lobortis arcu. Vestibulum vitae varius ipsum. Duis et hendrerit ligula. Aenean sit amet nulla ut massa posuere laoreet eget in elit. Pellentesque nec nibh at nunc bibendum blandit. Pellentesque tempus risus vel dui sagittis, sit amet tempus velit ullamcorper. Nunc semper nibh sit amet nulla placerat consequat.
-{{% /verticalchunk %}}

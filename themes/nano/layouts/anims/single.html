@@ -1,0 +1,4 @@
+{{ $path := printf "%s/%s/%s" "anims" .Slug "index.js" }}
+{{ $style := resources.Get $path | resources.ExecuteAsTemplate $path . | resources.Minify }}
+{{ $style.Permalink }}
+Test

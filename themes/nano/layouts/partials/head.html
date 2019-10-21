@@ -1,0 +1,11 @@
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{{ .Site.Title }}</title>
+<meta name="author" content="{{ .Site.Params.author }}">
+<meta name="description" content="{{ .Description }}">
+<meta name="keywords" content="{{ delimit .Keywords "," }}">
+<style>
+    {{ $options := (dict "targetPath" "style.css" "outputStyle" "compressed" "enableSourceMap" false) }}
+    {{ (resources.Get "style.scss" | resources.ToCSS $options).Content | safeCSS }}
+</style>
