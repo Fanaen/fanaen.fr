@@ -1,14 +1,40 @@
+$backgroundColor: #202428;
+$foregroundColor: #f2f2fa;
+$intermediateColor: #7e8d95;
+
+$iconsColor: #383f44;
+
+$linkColor: #690d20;
+$linkHoverColor: #aa1333;
+
 html, body {
-    background: #202428;
+    background: $backgroundColor;
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
+    color: $backgroundColor;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Oxygen', sans-serif;
 }
 
+a {
+    font-weight: bold;
+    color: $linkColor;
+    text-decoration: none;
+    &:hover { color: $linkHoverColor; }
+}
+
+ul {
+    list-style-type: none;
+}
+li {
+    margin-bottom: 0.2rem;
+    &:before { content: '– '; }
+}
+
+// Animation placeholder
 #back {
     position: fixed;
     top: 0;
@@ -18,10 +44,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .c {
-    background-color: #f2f2fa;
+    background-color: $foregroundColor;
     min-height: 100%;
 
-    padding: 20px;
+    padding: 3rem;
 
     h1, h2, h3, h4, h5, h6 {
         text-align: center;
@@ -29,7 +55,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .vc {
-    height: 100vh;
+    padding: 5rem 0;
 
     display: flex;
     flex-direction: column;
@@ -42,11 +68,69 @@ h1, h2, h3, h4, h5, h6 {
     flex-grow: 2;
 }
 
+.icons {
+    text-align: center;
+
+    a {
+        display: inline-block;
+        padding: 0.25rem;
+
+        &, svg {
+            width: 2rem;
+            height: 2rem;
+        }
+
+        &:not(:hover) path {
+            fill: $iconsColor;
+        }
+    }
+}
+
+.portrait {
+    &, img, source {
+        border-radius: 15rem;
+        margin: auto;
+        width: 15rem;
+    }
+}
+
+.aka {
+    display: block;
+    font-size: 80%;
+}
+
+.pagination { text-align: center; }
+.prev { position: absolute; left: 5rem; }
+.next { position: absolute; right: 5rem; }
+
+.anim {
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+
+    background-color: white;
+}
+
+.footer {
+    font-size: 80%;
+    text-align: center;
+
+    border-top: 1px solid $intermediateColor;
+    padding-top: 10px;
+    margin-top: 10rem;
+    margin-bottom: -2rem;
+}
 
 @media (min-width: 1000px) {
     .c {
         position: absolute;
         right: 100px;
         width: 400px;
+    }
+}
+@media (max-width: 1000px) {
+    .c {
+        position: absolute;
+        right: 50px;
+        left: 50px;
     }
 }

@@ -6,3 +6,39 @@ theme = "nano"
 [params]
 author = "Elouan Poupard-Cosquer"
 alias = "Fanaen"
+
+# Icons
+[[params.icons]]
+color = "#1DA1F2"
+url = "https://twitter.com/FanaenFR"
+icon = "icons/twitter.svg"
+
+[[params.icons]]
+color = "#181717"
+url = "https://github.com/Fanaen"
+icon = "icons/github.svg"
+
+[[params.icons]]
+color = "#E24329"
+url = "https://gitlab.com/Fanaen"
+icon = "icons/gitlab.svg"
+
+[[params.icons]]
+color = "#0052CC"
+url = "https://bitbucket.org/%7B87cfd53f-66eb-4bcd-932e-6947b16249bb%7D/"
+icon = "icons/bitbucket.svg"
+
+[[params.icons]]
+color = "#FA5C5C"
+url = "https://fanaen.itch.io/"
+icon = "icons/itch-dot-io.svg"
+
+[[params.icons]]
+color = "#05CC47"
+url = "https://www.deviantart.com/fanaen"
+icon = "icons/deviantart.svg"
+
+[[params.icons]]
+color = "#13AFF0"
+url = "https://www.artstation.com/fanaen"
+icon = "icons/artstation.svg"

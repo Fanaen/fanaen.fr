@@ -1,1 +1,30 @@
+<!-- Actual footer -->
+<div class="footer">
+    <p>
+        {{ .Site.Params.author }} © 2015-2019
+    </p>
+    <p id="currentAnim"></p>
+    <p>
+        Titles in <a href="https://fonts.google.com/specimen/Oxygen">Oxygen</a> by Vernon Adams <br>
+        Paragraphs in <a href="https://fonts.google.com/specimen/Montserrat">Montserrat</a> by Julieta Ulanovsky <br>
+        Brand icons from <a href="https://simpleicons.org/">Simple Icons</a>.
+    </p>
+    <p>
+        Powered by <a href="https://gohugo.io">Hugo</a>
+    </p>
+    <p>
+        <a href="#top">Top</a>
+    </p>
+</div>
+
+<!-- Random anim -->
+<script>
+    window.anims = [];
+    {{- range where .Site.RegularPages "Type" "anims" -}}
+    window.anims.push({"title":{{ .Title }},"slug":{{ .Slug -}} });
+    {{- end -}}
+</script>
+
+<!-- Boot script -->
 <script type="text/javascript">{{ (resources.Get "boot.js").Content | safeJS }}</script>
+

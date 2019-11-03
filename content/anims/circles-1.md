@@ -1,9 +1,9 @@
 +++
-title = "Vanta rings"
+title = "Cogs #01"
 slug = "circles-1"
 description = ""
 keywords = []
 draft = false
 +++
 
-Pwet
+The first graphic WebGL animation I did, specifically for this site.

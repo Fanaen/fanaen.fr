@@ -1,0 +1,12 @@
+{{ define "main" }}
+    <div class="pagination">
+        <a href="{{.Site.BaseURL}}">Home</a>
+    </div>
+    <h1>Background animations</h1>
+    {{ .Content }}
+    <ul>
+    {{ range .Pages }}
+        <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+    {{ end }}
+    </ul>
+{{ end }}

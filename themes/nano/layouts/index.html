@@ -1,8 +1,18 @@
 {{ define "main" }}
-<div class="vc">
+<div class="vc home">
     <div class="vc-space-above"></div>
-    <h1>{{ .Site.Params.author }}</h1>
-    <h2>aka {{ .Site.Params.alias }}</h2>
+    <picture class="portrait">
+        <source srcset="img/portrait.webp" type="image/webp">
+        <source srcset="img/portrait.jpg" type="image/jpeg">
+        <img src="img/portrait.jpg" alt="Portrait">
+    </picture>
+    <h1>{{ .Site.Params.author }}<span class="aka"> a.k.a. {{ .Site.Params.alias }}</span></h1>
+
+    <div class="icons">
+        {{ range .Site.Params.icons }}
+            <a href="{{ .url }}" style="fill: {{ .color }}">{{ (resources.Get .icon).Content | safeHTML }}</a>
+        {{ end }}
+    </div>
     <div class="vc-space-below"></div>
 </div>
 {{ .Content }}

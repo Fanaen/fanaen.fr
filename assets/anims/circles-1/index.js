@@ -37,7 +37,6 @@
     let scroll = window.scrollY / h();
     window.onscroll = function onScroll() {
         scroll = window.scrollY / h();
-        console.log(window.scrollY);
     };
 
     // Init Webgl --

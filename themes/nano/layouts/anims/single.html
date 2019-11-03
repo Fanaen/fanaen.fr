@@ -1,4 +1,20 @@
-{{ $path := printf "%s/%s/%s" "anims" .Slug "index.js" }}
-{{ $style := resources.Get $path | resources.ExecuteAsTemplate $path . | resources.Minify }}
-{{ $style.Permalink }}
-Test
+{{ define "main" }}
+<div>
+    <div class="pagination">
+        {{ if .Prev }}<span class="prev"><a href="{{ .Prev.RelPermalink }}">< Previous</a></span>{{ end }}
+        <a href="{{.Site.BaseURL}}{{.Section}}">All</a></span>
+        -
+        <a href="{{.Site.BaseURL}}">Home</a>
+        {{ if .Next }}<span class="next"><a href="{{ .Next.RelPermalink }}">Next ></a></span>{{ end }}
+    </div>
+
+    <h1>{{ .Title }}</h1>
+    <h2>{{ .Description }}</h2>
+    {{ $path := printf "%s/%s/%s" "anims" .Slug "index.js" }}
+    {{ $style := resources.Get $path | resources.ExecuteAsTemplate $path . | resources.Minify }}
+    {{ substr $style.Permalink 0 0 }}
+
+    {{ .Content }}
+    <script>window.anim = "{{ .Slug }}";</script>
+</div>
+{{ end }}
