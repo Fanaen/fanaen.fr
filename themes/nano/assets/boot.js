@@ -44,15 +44,6 @@ function autorun()
         }
         script.src = "/anims/" + anim + "/index.min.js";
         document.head.appendChild(script);
-
-        // -- Download web-fonts --
-        const head  = document.getElementsByTagName('head')[0];
-        const link  = document.createElement('link');
-        link.rel  = 'stylesheet';
-        link.type = 'text/css';
-        link.href = 'https://fonts.googleapis.com/css?family=Montserrat|Oxygen&display=swap';
-        link.media = 'all';
-        head.appendChild(link);
     }
 }
 if (document.addEventListener) document.addEventListener("DOMContentLoaded", autorun, false);

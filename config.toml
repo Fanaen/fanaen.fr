@@ -6,6 +6,15 @@ theme = "nano"
 [params]
 author = "Elouan Poupard-Cosquer"
 alias = "Fanaen"
+roles = [
+    "Developer",
+    "Drummer",
+    "Amateur flautist",
+    "Amateur harpist",
+    "Amateur photograph",
+    "Space enthusiast",
+    "Vector designer"
+]
 
 # Icons
 [[params.icons]]

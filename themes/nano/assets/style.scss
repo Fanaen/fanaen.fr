@@ -7,6 +7,31 @@ $iconsColor: #383f44;
 $linkColor: #690d20;
 $linkHoverColor: #aa1333;
 
+$iconSize: 1.5rem;
+$portraitSize: 15rem;
+
+/* montserrat-regular - latin */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Montserrat Regular'), local('Montserrat-Regular'),
+    url('/fonts/montserrat-v14-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('/fonts/montserrat-v14-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* oxygen-regular - latin */
+@font-face {
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Oxygen Regular'), local('Oxygen-Regular'),
+    url('/fonts/oxygen-v9-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('/fonts/oxygen-v9-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
 html, body {
     background: $backgroundColor;
     margin: 0;
@@ -47,8 +72,6 @@ li {
     background-color: $foregroundColor;
     min-height: 100%;
 
-    padding: 3rem;
-
     h1, h2, h3, h4, h5, h6 {
         text-align: center;
     }
@@ -73,11 +96,11 @@ li {
 
     a {
         display: inline-block;
-        padding: 0.25rem;
+        padding: $iconSize / 6;
 
         &, svg {
-            width: 2rem;
-            height: 2rem;
+            width: $iconSize;
+            height: $iconSize;
         }
 
         &:not(:hover) path {
@@ -88,9 +111,10 @@ li {
 
 .portrait {
     &, img, source {
-        border-radius: 15rem;
+        border-radius: $portraitSize;
         margin: auto;
-        width: 15rem;
+        width: $portraitSize;
+        height: $portraitSize;
     }
 }
 
@@ -99,9 +123,17 @@ li {
     font-size: 80%;
 }
 
-.pagination { text-align: center; }
-.prev { position: absolute; left: 5rem; }
-.next { position: absolute; right: 5rem; }
+#roles {
+    font-size: 1.4rem;
+    height: 1.4rem;
+    text-align: center;
+    color: $linkColor;
+    margin-bottom: 1.5rem;
+}
+
+.pagination { position: relative; text-align: center; }
+.prev { position: absolute; left: 0; }
+.next { position: absolute; right: 0; }
 
 .anim {
     padding: 0.5rem 1rem;
@@ -125,12 +157,26 @@ li {
         position: absolute;
         right: 100px;
         width: 400px;
+
+        padding: 3rem;
     }
 }
-@media (max-width: 1000px) {
+@media (min-width: 500px) and (max-width: 1000px) {
     .c {
         position: absolute;
         right: 50px;
         left: 50px;
+
+        padding: 3rem;
+    }
+}
+@media (max-width: 500px) {
+    .c {
+        position: absolute;
+        right: 20px;
+        left: 20px;
+        min-width: 280px;
+
+        padding: 20px;
     }
 }
