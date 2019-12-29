@@ -17,8 +17,8 @@
         document.body.appendChild(shader);
     }
 
-    createShader('vs', '{{ (resources.Get "anims/circles-1/vertexShader.glsl").Content | replaceRE "\n" "\\n" }}');
-    createShader('fs', '{{ (resources.Get "anims/circles-1/fragmentShader.glsl").Content | replaceRE "\n" "\\n" }}');
+    createShader('vs', '{{ (resources.Get "anims/cogs-1/vertexShader.glsl").Content | replaceRE "\n" "\\n" }}');
+    createShader('fs', '{{ (resources.Get "anims/cogs-1/fragmentShader.glsl").Content | replaceRE "\n" "\\n" }}');
 
     // Create the canvas --
     const background = document.getElementById('back');
