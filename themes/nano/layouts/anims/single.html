@@ -1,11 +1,11 @@
 {{ define "main" }}
 <div>
     <div class="pagination">
-        {{ if .NextPage }}<span class="prev"><a href="{{ .NextPage.RelPermalink }}">< Previous</a></span>{{ end }}
-        <a href="{{.Site.BaseURL}}{{.Section}}">All</a></span>
+        {{ if .NextPage }}<span class="prev"><a href="{{ .NextPage.RelPermalink }}">< {{ i18n "previous" . }}</a></span>{{ end }}
+        <a href="{{.Site.BaseURL}}{{.Section}}">{{ i18n "allAnimations" . }}</a></span>
         -
-        <a href="{{.Site.BaseURL}}">Home</a>
-        {{ if .PrevPage }}<span class="next"><a href="{{ .PrevPage.RelPermalink }}">Next ></a></span>{{ end }}
+        <a href="{{.Site.BaseURL}}">{{ i18n "home" . }}</a>
+        {{ if .PrevPage }}<span class="next"><a href="{{ .PrevPage.RelPermalink }}">{{ i18n "next" . }} ></a></span>{{ end }}
     </div>
 
     <h1>{{ .Title }}</h1>

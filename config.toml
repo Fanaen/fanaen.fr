@@ -1,11 +1,25 @@
 baseURL = "http://fanaen.fr/"
-languageCode = "en-uk"
 title = "Elouan Poupard-Cosquer"
 theme = "nano"
+DefaultContentLanguage = "fr"
 
-[params]
-author = "Elouan Poupard-Cosquer"
-alias = "Fanaen"
+[languages.fr]
+languageName = "Français"
+languageCode = "fr-FR"
+weight = 1
+roles = [
+    "Développeur",
+    "Batteur",
+    "Flutiste amateur",
+    "Harpiste amateur",
+    "Photographe amateur",
+    "Passionné d'astronomie"
+]
+
+[languages.en]
+languageName = "English"
+languageCode = "en-uk"
+weight = 2
 roles = [
     "Developer",
     "Drummer",
@@ -15,6 +29,10 @@ roles = [
     "Space enthusiast",
     "Vector designer"
 ]
+
+[params]
+author = "Elouan Poupard-Cosquer"
+alias = "Fanaen"
 
 # Icons
 [[params.icons]]

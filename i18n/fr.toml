@@ -1,0 +1,30 @@
+# Animations
+[home]
+other = "Accueil"
+[previous]
+other = "Précédent"
+[next]
+other = "Suivant"
+[allAnimations]
+other = "Liste"
+[backgroundAnimations]
+other = "Animations de fond"
+
+# Footer
+[poweredBy]
+other = "Généré avec "
+
+[animation]
+other = "Animation"
+
+[titlesIn]
+other = "Titres en "
+[paragraphsIn]
+other = "Paragraphes en "
+[brandIconsFrom]
+other = "Icones pour les marques issues de "
+[by]
+other = " par "
+
+[upYouGo]
+other = "Retour en haut"

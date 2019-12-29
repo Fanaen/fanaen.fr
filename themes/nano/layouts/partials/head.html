@@ -9,3 +9,8 @@
     {{ $options := (dict "targetPath" "style.css" "outputStyle" "compressed" "enableSourceMap" false) }}
     {{ (resources.Get "style.scss" | resources.ToCSS $options).Content | safeCSS }}
 </style>
+{{ if .IsTranslated }}
+{{ range .Translations }}
+<link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}" title="{{ .Language.LanguageName }}">
+{{ end }}
+{{ end }}

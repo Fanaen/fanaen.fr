@@ -1,29 +1,43 @@
 <!-- Animation "player" -->
 <div class="animPlayer">
-    <span>Animation</span>
+    <span>{{ i18n "animation" }}</span>
     <span id="currentAnim"></span>
 </div>
 
 <!-- Actual footer -->
 <div class="footer">
     <p>
-        {{ .Site.Params.author }} © 2015-2019 -
-        Powered by <a href="https://gohugo.io">Hugo</a>
+        <!-- Translations -->
+        {{ if .IsTranslated }}
+            {{ range $index, $element := $.AllTranslations }}
+            {{ if ne $index 0 }} <span class="langSep">/</span> {{ end }}
+            <a href="{{ $element.Permalink }}">{{ $element.Language.LanguageName }}</a></li>
+            {{ end }}
+        {{ else }}
+            {{ range $index, $element := $.Site.Home.AllTranslations }}
+            {{ if ne $index 0 }} <span class="langSep">/</span> {{ end }}
+            <a href="{{ $element.Permalink }}">{{ $element.Language.LanguageName }}</a></li>
+            {{ end }}
+        {{ end }}
     </p>
     <p>
-        Titles in <a href="https://fonts.google.com/specimen/Oxygen">Oxygen</a> by Vernon Adams <br>
-        Paragraphs in <a href="https://fonts.google.com/specimen/Montserrat">Montserrat</a> by Julieta Ulanovsky <br>
-        Brand icons from <a href="https://simpleicons.org/">Simple Icons</a>.
+        {{ .Site.Params.author }} © 2015-2019 -
+        {{ i18n "poweredBy" }}<a href="https://gohugo.io">Hugo</a>
+    </p>
+    <p>
+        {{ i18n "titlesIn" . }}<a href="https://fonts.google.com/specimen/Oxygen">Oxygen</a>{{ i18n "by" . }}Vernon Adams <br>
+        {{ i18n "paragraphsIn" . }}<a href="https://fonts.google.com/specimen/Montserrat">Montserrat</a>{{ i18n "by" . }}Julieta Ulanovsky <br>
+        {{ i18n "brandIconsFrom" . }}<a href="https://simpleicons.org/">Simple Icons</a>
     </p>
 </div>
 
-<a class="top" href="#top" title="Up you go">^</a>
+<a class="top" href="#top" title="{{ i18n "upYouGo" . }}">^</a>
 
 <!-- Random anim -->
 <script>
     window.anims = [];
     {{- range where .Site.RegularPages "Type" "anims" -}}
-    window.anims.push({"title":{{ .Title }},"slug":{{ .Slug -}} });
+    window.anims.push({"title":{{ .Title }},"slug":{{ .Slug -}},"url":{{ .Permalink -}} });
     {{- end -}}
 </script>
 

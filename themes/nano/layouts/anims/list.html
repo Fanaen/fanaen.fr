@@ -1,8 +1,8 @@
 {{ define "main" }}
     <div class="pagination">
-        <a href="{{.Site.BaseURL}}">Home</a>
+        <a href="{{.Site.BaseURL}}">{{ i18n "home" . }}</a>
     </div>
-    <h1>Background animations</h1>
+    <h1>{{ i18n "backgroundAnimations" . }}</h1>
     {{ .Content }}
     <ul>
     {{ range .Pages }}

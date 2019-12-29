@@ -45,8 +45,9 @@ function autorun()
         }
 
         if (window.anims && animIdx >= 0) {
-            document.getElementById('currentAnim').innerHTML = '<a href="/anims/' + anim +'">'
-                + window.anims[animIdx].title + '</a>';
+            const animElement = window.anims[animIdx];
+            document.getElementById('currentAnim').innerHTML = '<a href="' + animElement.url +'">'
+                + animElement.title + '</a>';
         }
 
         script.src = "/anims/" + anim + "/index.min.js";

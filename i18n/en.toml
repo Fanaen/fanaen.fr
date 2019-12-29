@@ -1,0 +1,30 @@
+# Animations
+[home]
+other = "Home"
+[previous]
+other = "Previous"
+[next]
+other = "Next"
+[allAnimations]
+other = "All"
+[backgroundAnimations]
+other = "Background animations"
+
+# Footer
+[poweredBy]
+other = "Powered by "
+
+[animation]
+other = "Animation"
+
+[titlesIn]
+other = "Titles in "
+[paragraphsIn]
+other = "Paragraphs in "
+[brandIconsFrom]
+other = "Brand icons from "
+[by]
+other = " by "
+
+[upYouGo]
+other = "Up you go"
