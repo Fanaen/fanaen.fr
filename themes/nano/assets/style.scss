@@ -1,6 +1,7 @@
 $backgroundColor: #202428;
 $foregroundColor: #f2f2fa;
 $intermediateColor: #7e8d95;
+$animPlayerColor: #5c687c;
 
 $iconsColor: #383f44;
 
@@ -142,13 +143,28 @@ li {
     background-color: white;
 }
 
+.animPlayer {
+    position: sticky;
+    bottom: 0;
+
+    background-color: $animPlayerColor;
+    color: $foregroundColor;
+
+    margin: 5rem -3rem 0 -3rem;
+    padding: 0.5rem;
+
+    text-align: center;
+
+    a {
+        color: white;
+    }
+}
+
 .footer {
     font-size: 80%;
     text-align: center;
 
-    border-top: 1px solid $intermediateColor;
     padding-top: 10px;
-    margin-top: 10rem;
     margin-bottom: -2rem;
 }
 

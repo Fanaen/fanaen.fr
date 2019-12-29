@@ -1,14 +1,15 @@
 +++
 title = "Home"
 keywords = ['polyvalent', 'developer', 'musician']
+
 +++
 
 {{%verticalchunk%}}
 ## Software engineering
 
-Polyvalent developer at [Method in the Madness](https://www.methodinthemadness.eu) and keen about software in all its forms. I like to solve technical issues for clients, coworkers, friends and family members alike. 
+Polyvalent developer at [Method in the Madness](https://www.methodinthemadness.eu) and keen about software in all its forms. I like to solve technical issues for clients, co-workers, friends and family members alike.
 
-But no, I won't "fix your computer". Ok, Maybe I will, if you give me chocolate...</sub>.
+
 
 {{%/verticalchunk%}}
 

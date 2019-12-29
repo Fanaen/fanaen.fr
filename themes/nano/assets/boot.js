@@ -28,9 +28,10 @@ function autorun()
         };
 
         let anim = window.anim;
+        let animIdx;
         if (!window.anim && window.anims) {
             const wantedAnim = findGetParameter('anim');
-            let animIdx = Math.floor(Math.random() * Math.floor(window.anims.length));
+            animIdx = Math.floor(Math.random() * Math.floor(window.anims.length));
 
             if (wantedAnim) {
                 const wantedIndex = window.anims.findIndex(anim => anim.slug === wantedAnim);
@@ -38,10 +39,16 @@ function autorun()
             }
 
             anim = window.anims[animIdx].slug;
-
-            document.getElementById('currentAnim').innerHTML = 'Current animation is <a href="/anims/' + anim +'">'
-                + window.anims[animIdx].title + '</a>.';
         }
+        else if(window.anims) {
+            animIdx = window.anims.findIndex(e => e.slug === anim);
+        }
+
+        if (window.anims && animIdx >= 0) {
+            document.getElementById('currentAnim').innerHTML = '<a href="/anims/' + anim +'">'
+                + window.anims[animIdx].title + '</a>';
+        }
+
         script.src = "/anims/" + anim + "/index.min.js";
         document.head.appendChild(script);
     }
