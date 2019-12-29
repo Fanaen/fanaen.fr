@@ -168,6 +168,23 @@ li {
     margin-bottom: -2rem;
 }
 
+.top {
+    position: fixed;
+    bottom: 60px;
+    right: 30px;
+
+    width: 40px;
+    height: 40px;
+
+    font-size: 30px;
+
+    text-align: center;
+
+    background: $animPlayerColor;
+    color: $foregroundColor;
+    border-radius: 20px;
+}
+
 @media (min-width: 1000px) {
     .c {
         position: absolute;
