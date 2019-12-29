@@ -1,7 +1,9 @@
 +++
 title = "Home"
 keywords = ['polyvalent', 'developpeur', 'musicien']
-
+aliases = [
+    '/projets', '/portfolio'
+]
 +++
 
 {{%verticalchunk%}}
