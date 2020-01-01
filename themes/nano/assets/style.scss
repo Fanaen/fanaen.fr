@@ -150,10 +150,21 @@ li {
     background-color: $animPlayerColor;
     color: $foregroundColor;
 
-    margin: 5rem -3rem 0 -3rem;
     padding: 0.5rem;
 
     text-align: center;
+
+    .no-anim & {
+        position: relative;
+
+        height: 1px;
+        padding: 0;
+        margin: 0 !important;
+
+        * {
+            display: none;
+        }
+    }
 
     a {
         color: white;
@@ -183,6 +194,10 @@ li {
     background: $animPlayerColor;
     color: $foregroundColor;
     border-radius: 20px;
+
+    &:visited {
+        color: $foregroundColor;
+    }
 }
 
 .langSep {
@@ -197,6 +212,10 @@ li {
 
         padding: 3rem;
     }
+
+    .animPlayer {
+        margin: 5rem -3rem 0 -3rem;
+    }
 }
 @media (min-width: 500px) and (max-width: 1000px) {
     .c {
@@ -205,6 +224,10 @@ li {
         left: 50px;
 
         padding: 3rem;
+    }
+
+    .animPlayer {
+        margin: 5rem -3rem 0 -3rem;
     }
 }
 @media (max-width: 500px) {
@@ -215,5 +238,9 @@ li {
         min-width: 280px;
 
         padding: 20px;
+    }
+
+    .animPlayer {
+        margin: 5rem -20px 0 -20px;
     }
 }

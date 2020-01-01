@@ -19,6 +19,7 @@ function autorun()
 {
     if (isMobile.phone || isMobile.tablet) {
         // No animation/fonts on mobile and tablet
+        document.documentElement.className = 'no-anim';
     }
     else {
         // -- Download the animation --
