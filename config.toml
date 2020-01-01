@@ -33,6 +33,7 @@ roles = [
 [params]
 author = "Elouan Poupard-Cosquer"
 alias = "Fanaen"
+creationYear = 2015
 
 # Icons
 [[params.icons]]

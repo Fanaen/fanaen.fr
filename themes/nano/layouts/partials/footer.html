@@ -21,7 +21,7 @@
         {{ end }}
     </p>
     <p>
-        {{ .Site.Params.author }} © 2015-2019 -
+        {{ .Site.Params.author }} © {{ .Site.Params.creationYear }}-{{ dateFormat "2006" now }} -
         {{ i18n "poweredBy" }}<a href="https://gohugo.io">Hugo</a>
     </p>
     <p>
