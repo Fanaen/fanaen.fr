@@ -18,7 +18,7 @@ des clients, collègues, amis et membres de la famille.
 {{% verticalchunk %}}
 # Art
 
-Batteur, harpiste et flutiste amateur. Compositor, photographe et graphiste vectoriel à mes heures perdues.
+Batteur, harpiste et flutiste amateur. Compositeur, photographe et graphiste vectoriel à mes heures perdues.
 {{% /verticalchunk %}}
 
 {{% verticalchunk %}}
