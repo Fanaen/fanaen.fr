@@ -3,6 +3,9 @@ title = "Elouan Poupard-Cosquer"
 theme = "nano"
 DefaultContentLanguage = "fr"
 
+[markup.goldmark.renderer]
+unsafe= true
+
 [languages.fr]
 languageName = "Français"
 languageCode = "fr-FR"
