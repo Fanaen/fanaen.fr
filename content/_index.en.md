@@ -10,8 +10,7 @@ aliases = [
 ## Software engineering
 
 Polyvalent developer at [Method in the Madness](https://www.methodinthemadness.eu) and keen 
-about software in all its forms. I like to solve technical issues for clients, co-workers,
- friends and family members alike.
+about software in all its forms. 
 
 {{%/verticalchunk%}}
 

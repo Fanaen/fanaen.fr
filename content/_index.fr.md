@@ -10,8 +10,7 @@ aliases = [
 ## Ingenierie logicielle
 
 Développeur polyvalent en poste chez [Method in the Madness](https://www.methodinthemadness.eu). 
-Passionné par le développement sous toutes ses formes. J'aime résoudre les problèmes aussi bien
-des clients, collègues, amis et membres de la famille.
+Passionné par le développement sous toutes ses formes.
 {{%/verticalchunk%}}
 
 
